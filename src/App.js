@@ -1,10 +1,14 @@
 import './App.css';
 import Button from './components/Button';
 
-function App() {
+const App = () => {
+  const handleClick = () => {
+    console.log("Button clicked!");
+  };
+
   return (
     <div>
-      <Button></Button>
+      <Button onClick={handleClick} />
     </div>
   );
 }
